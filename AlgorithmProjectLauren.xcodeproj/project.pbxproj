@@ -54,14 +54,46 @@
 		AB86597121961367004BF394 /* AlgorithmProjectLauren */ = {
 			isa = PBXGroup;
 			children = (
-				AB86597221961367004BF394 /* AppDelegate.swift */,
-				AB86597421961367004BF394 /* ViewController.swift */,
-				AB86597621961367004BF394 /* Main.storyboard */,
-				AB86597921961368004BF394 /* Assets.xcassets */,
-				AB86597B21961368004BF394 /* LaunchScreen.storyboard */,
-				AB86597E21961368004BF394 /* Info.plist */,
+				AB865987219613B5004BF394 /* Model */,
+				AB8659852196138B004BF394 /* Resources */,
+				AB86598621961397004BF394 /* Controller */,
+				AB86598421961380004BF394 /* View */,
 			);
 			path = AlgorithmProjectLauren;
+			sourceTree = "<group>";
+		};
+		AB86598421961380004BF394 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB86597621961367004BF394 /* Main.storyboard */,
+				AB86597B21961368004BF394 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB8659852196138B004BF394 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB86597221961367004BF394 /* AppDelegate.swift */,
+				AB86597921961368004BF394 /* Assets.xcassets */,
+				AB86597E21961368004BF394 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB86598621961397004BF394 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB86597421961367004BF394 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB865987219613B5004BF394 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlgorithmProjectLauren/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AlgorithmProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlgorithmProjectLauren/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AlgorithmProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
