@@ -23,17 +23,17 @@ class AlgorithmViewController: UIViewController
    
     private func formatAlgorithm() -> Void
     {
-        let title: String = ""
+        let title: String = "Create an IOS App"
         
-        let stepOne : String = ""
-        let stepTwo : String = ""
-        let stepThree : String = ""
-        let stepFour : String = ""
-        let stepFive : String = ""
-        let stepSix : String = ""
-        let stepSeven : String = ""
+        let stepOne : String = "Open XCode and select ‘Create new XCode project’"
+        let stepTwo : String = "Select ‘single view app,’ name your app, and save it to the workspace"
+        let stepThree : String = "Create a folder for Controller, Model, View, and Resources and move the existing files to their appropriate folders"
+        let stepFour : String = "Connect your info.plist to the app’s identity and set the Main.storyboard to automatically connect to the controller file"
+        let stepFive : String = "Commit it to Github"
+        let stepSix : String = "Use the Main.storyboard to begin designing your app’s GUI and programming the app."
         
-        let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven]
+        
+        let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
@@ -55,7 +55,8 @@ class AlgorithmViewController: UIViewController
         
     }
 
-    private func createOutlineStyle() -> NSParagraphStyle{
+    private func createOutlineStyle() -> NSParagraphStyle
+    {
         let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         
         outlineStyle.alignment = .left
