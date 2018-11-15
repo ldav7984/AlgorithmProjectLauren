@@ -40,7 +40,7 @@ class AlgorithmViewController: UIViewController
         
         for step in algorithm
         {
-            let bullet: String  = ""
+            let bullet: String  = "📱"
             //interpolation
             let formattedStep : String = "\n\(bullet) \(step)"
             let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(String: formattedStep)
