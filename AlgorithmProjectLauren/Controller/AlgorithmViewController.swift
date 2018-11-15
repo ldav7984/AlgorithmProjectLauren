@@ -12,9 +12,10 @@ class AlgorithmViewController: UIViewController
 {
 
     @IBOutlet weak var swiftImage: UIImageView!
+    
     @IBOutlet weak var algorithmText: UILabel!
     
-    override func viewDidLoad()
+    override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
         formatAlgorithm()
@@ -43,7 +44,7 @@ class AlgorithmViewController: UIViewController
             let bullet: String  = "📱"
             //interpolation
             let formattedStep : String = "\n\(bullet) \(step)"
-            let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(String: formattedStep)
+            let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let outlineStyle = createOutlineStyle()
             
             attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
@@ -53,7 +54,7 @@ class AlgorithmViewController: UIViewController
         }
         algorithmText.attributedText = fullAttributedString
         
-    }
+    }//end of formatAlgorithm()
 
     private func createOutlineStyle() -> NSParagraphStyle
     {
