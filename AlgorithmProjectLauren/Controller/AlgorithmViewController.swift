@@ -11,9 +11,11 @@ import UIKit
 class AlgorithmViewController: UIViewController
 {
 
+    @IBOutlet weak var algorithmText: UILabel!
+    
     @IBOutlet weak var swiftImage: UIImageView!
     
-    @IBOutlet weak var algorithmText: UILabel!
+   
     
     override func viewDidLoad() -> Void
     {
