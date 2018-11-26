@@ -35,15 +35,14 @@ class AlgorithmViewController: UIViewController
         let stepFive : String = "Commit it to Github"
         let stepSix : String = "Use the Main.storyboard to begin designing your app’s GUI and programming the app."
         
-        
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
-        
+
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
         
         for step in algorithm
         {
-            let bullet: String  = "📱"
+            let bullet: String  = "🖌"
             //interpolation
             let formattedStep : String = "\n\(bullet) \(step)"
             let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
@@ -55,6 +54,7 @@ class AlgorithmViewController: UIViewController
             
         }
         algorithmText.attributedText = fullAttributedString
+        //attributes the text in the textbox to be the fullAttributedString
         
     }//end of formatAlgorithm()
 
