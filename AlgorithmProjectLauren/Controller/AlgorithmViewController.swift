@@ -33,7 +33,7 @@ class AlgorithmViewController: UIViewController
         let stepThree : String = "Create a folder for Controller, Model, View, and Resources and move the existing files to their appropriate folders"
         let stepFour : String = "Connect your info.plist to the app’s identity and set the Main.storyboard to automatically connect to the controller file"
         let stepFive : String = "Commit it to Github"
-        let stepSix : String = "Use the Main.storyboard to begin designing your app’s GUI and programming the app."
+        let stepSix : String = "Use the Main.storyboard to begin designing your app’s GUI."
         
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
 
@@ -48,11 +48,12 @@ class AlgorithmViewController: UIViewController
             let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let outlineStyle = createOutlineStyle()
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0,attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
             
         }
+        
         algorithmText.attributedText = fullAttributedString
         //attributes the text in the textbox to be the fullAttributedString
         
